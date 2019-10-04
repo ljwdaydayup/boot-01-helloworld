@@ -1,2 +1,8 @@
 server:
   port: 8090  # web\u5E94\u7528\u670D\u52A1\u7AEF\u53E3
+
+
+  spring:
+    jackson:
+      date-format: yyyy-MM-dd HH:mm:ss
+      time-zone: GMT+8

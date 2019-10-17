@@ -6,3 +6,33 @@ server:
     jackson:
       date-format: yyyy-MM-dd HH:mm:ss
       time-zone: GMT+8
+
+#    1. 一个家庭有爸爸、妈妈、孩子。
+#    2. 这个家庭有一个名字（family-name）叫做“happy family”
+#    3. 爸爸有名字(name)和年龄（age）两个属性
+#    4. 妈妈有两个别名和年龄，妈妈的年龄和爸爸一样
+#    5. 孩子除了名字(name)和年龄（age）两个属性，还有一个friends的集合
+#    6. 每个friend有两个属性：hobby(爱好)和性别(sex)
+
+family:
+  family-name: happly family
+  dad:
+    name: levi
+    age: 50   #${random.int}  随机数的值是不能传递的
+  mom:
+    alias:
+      - yilisha
+      - alise
+    age: ${family.dad.age}   #妈妈的年龄和爸爸相同，没有则默认为24岁
+  child:
+    name: happlyboy
+    age: 5
+    friends:
+      - {hobby: baseball,sex: male}
+      - {hobby: football,sex: famale}
+
+#数组的另一种表达方式：
+#      - hobby: baseball
+#        sex: male
+#      - hobby:  football
+#        sex: famale

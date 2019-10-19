@@ -15,10 +15,10 @@ server:
 #    6. 每个friend有两个属性：hobby(爱好)和性别(sex)
 
 family:
-  family-name: happly family
+  family-name:
   dad:
     name: levi
-    age: 50   #${random.int}  随机数的值是不能传递的
+    age: 30  #${random.int}  随机数的值是不能传递的
   mom:
     alias:
       - yilisha

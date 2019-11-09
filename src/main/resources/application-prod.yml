@@ -1,14 +1,11 @@
 server:
-  port: 8090  # web\u5E94\u7528\u670D\u52A1\u7AEF\u53E3
+  port: 8888 # web\u5E94\u7528\u670D\u52A1\u7AEF\u53E3
 
 
   spring:
     jackson:
       date-format: yyyy-MM-dd HH:mm:ss
       time-zone: GMT+8
-spring:
-  profiles:
-    active: test
 
 #    1. 一个家庭有爸爸、妈妈、孩子。
 #    2. 这个家庭有一个名字（family-name）叫做“happy family”

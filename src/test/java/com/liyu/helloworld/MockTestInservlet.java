@@ -44,7 +44,7 @@ public class MockTestInservlet {
     @Autowired
     private AnimalService animalService;
 /*    @MockBean
-    private AnimalController service;*/
+    private AnimalController animal;*/
 
 
     @Test
